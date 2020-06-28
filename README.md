@@ -51,3 +51,9 @@ You cannot used reserved words as variable names/identifiers
 -else
 -is
 -try
+
+
+### __pycache__ ?
+
+This is where lives Python 3 bytecode compiled and ready to be executed. You normally want to add this into your gitignore file. This is simply bytecode cerated when you compile your python code. Which means that it can be re-obtained once you compile python again.  
+
