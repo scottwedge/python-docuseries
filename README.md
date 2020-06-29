@@ -14,6 +14,10 @@ Python 2 and Python 3 are quite different. To the point that Python 3 is not “
 
 Pip is the standard package manager for python. Using it allows you to install packages that are not part of the standard library. Pip3 is a version of the pip installer for python3, which can download and configure new python modules too. Pip3 relies on PyPI ([the Python Package Index](https://pypi.org/)) which is a [software repository](https://en.wikipedia.org/wiki/Software_repository) where versions of community-managed modules are maintained.
 
+### __pycache__ ?
+
+This is where lives Python 3 bytecode compiled and ready to be executed. You normally want to add this into your gitignore file. This is simply bytecode cerated when you compile your python code. Which means that it can be re-obtained once you compile python again.  
+
 ### Python Reserved Words
 
 You cannot used reserved words as variable names/identifiers
@@ -52,8 +56,38 @@ You cannot used reserved words as variable names/identifiers
 -is
 -try
 
+### Rules for writing identifiers
 
-### __pycache__ ?
+1. Identifiers can be a combination of letters in lowercase **(a to z)** or uppercase **(A to Z)** or digits **(0 to 9)** or an underscore `_`. Names like `myClass`, `var_1` and `print_this_to_screen`, all are valid example.
 
-This is where lives Python 3 bytecode compiled and ready to be executed. You normally want to add this into your gitignore file. This is simply bytecode cerated when you compile your python code. Which means that it can be re-obtained once you compile python again.  
+2. An identifier cannot start with a digit. `1variable` is invalid, but `variable1` is a valid name.
 
+3. Keywords cannot be used as identifiers.
+
+      ```python
+      global = 1
+      ```
+
+      **Output**
+      ```python
+            File "<interactive input>", line 1
+            global = 1
+            ^
+            SyntaxError: invalid syntax
+      ```
+
+4. We cannot use special symbols like **!, @, #, $, % etc.** in our identifier.
+
+      ```python
+            a@ = 0
+      ```
+
+      **Output**
+      ```python
+            File "<interactive input>", line 1
+            a@ = 0
+            ^
+            SyntaxError: invalid syntax
+      ```
+
+5. An identifier can be of any length.
