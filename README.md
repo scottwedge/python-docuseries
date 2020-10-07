@@ -8,7 +8,7 @@ CPython interpreter is the reference implementation of Python which is written i
 
 ### Python 2 vs Python 3
 
-Python 2 and Python 3 are quite different. To the point that Python 3 is not “backwards-compatible” which means that if you have a project that is using various Python 2 libraries they may no longer work after you upgrade. There are multiple difference between python 2 and python 3 in terms of syntax which is msotly responsible for the lack of “backwards-compatibility”. Its best to simply stick to python 3 unless you plan to use older libraries that were first implemented in python 2. 
+Python 2 and Python 3 are quite different. To the point that Python 3 is not “backwards-compatible” which means that if you have a project that is using various Python 2 libraries they may no longer work after you upgrade. There are multiple difference between python 2 and python 3 in terms of syntax which is mostly responsible for the lack of “backwards-compatibility”. Its best to simply stick to python 3 unless you plan to use older libraries that were first implemented in python 2. 
 
 ### Pip3
 
